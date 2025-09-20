@@ -65,8 +65,8 @@ body.darktheme {
     background: none;
     border: 1px solid #F9F9FF;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -77,9 +77,11 @@ body.darktheme {
 
 #theme-switcher .fa-sun {
     display: none;
+    font-size: var(--font-size-detail);
 }
 #theme-switcher .fa-moon {
     display: block;
+    font-size: var(--font-size-detail);
 }
 
 body.darktheme #theme-switcher .fa-moon {
@@ -122,7 +124,7 @@ img{
     background-position: center;
     background-repeat: no-repeat;
     width: auto;
-    height: 728px;
+    max-height: 728px;
 
 }
 
@@ -173,7 +175,7 @@ header .navbar {
     gap: 5px;
 }
 
-.navbar .nav-menu .nav-link {
+.navbar .nav-menu .nav-link, .nav-menu .nav-links{
     color: #FFFFFF;
     padding: 10px 18px;
     font-size: var(--font-size-base);
@@ -301,14 +303,16 @@ body.show-searchbar .search-icon-outside {
     gap: 1rem;
 }
 
-.navbar .show-menu-button .menu-icon {
+.navbar .menu-icon ,.navbar .menu-close-icon{
+    display: none;
     font-size: var(--font-size-heading);
     color: #ffffff;
 }
 
 /*hero section*/
 .hero-section {
-    padding-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 80px;
 }
 
 .hero-section .section-content {
@@ -325,8 +329,8 @@ body.show-searchbar .search-icon-outside {
     flex-direction: column;
     align-items: center; 
     gap: 32px; 
-    max-height: 264px;
-    margin-top: 232px;
+    max-height: 350px;
+    margin-top: 200px;
     padding-left: 160px;
     padding-right: 160px;
 }
@@ -364,6 +368,7 @@ body.show-searchbar .search-icon-outside {
 }
 
 .hero-section .why-catalog a{
+    font-size: var(--font-size-detail);
     color: #FFFFFF;
 }
 

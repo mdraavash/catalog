@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css" media="(max-width : 768px)">
+    <link rel="stylesheet" href="css/responsive.css" media="(max-width : 1100px)">
     <title>Catalog</title>
 </head>
 <body>
@@ -27,7 +28,7 @@
                         <a href="#campaigns" class="nav-link">Case Studies</a>
                     </li>
                     <li class="nav-item has-dropdown">
-                        <a href="#latestresources" class="nav-link" id="resources-link">
+                        <a href="#latestresources" class="nav-links" id="resources-link">
                             <div class="resources-content">Resources
                             <i class="fa-solid fa-angle-down" id="dropdown-icon"></i></div>
                         </a>
@@ -81,10 +82,13 @@
                             <i class="fa-solid fa-moon"></i>
                         </div>
                     </button>
-                    <button class="show-menu-button">
-                        <i class="fa-solid fa-list menu-icon"></i>
+                    <button id="show-menu-button">
+                        <span class="material-symbols-outlined">menu</span>
                     </button>
                 </div>
+                <button id="close-menu-button">
+                    <i class="fa-solid fa-xmark menu-close-icon"></i>
+                </button>
             </nav>
         </header>
         <div class="hero-section">
@@ -465,6 +469,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="scripts/show-menu.js" defer></script>
     <script src="scripts/script.js" defer></script>
 </body>
 </html>
