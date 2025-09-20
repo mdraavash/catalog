@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Catalog</title>
+</head>
+<body>
+    <div class="same-backdrop">
+        <header>
+            <nav class="navbar section-content">
+                <a href="#" class="nav-logo">
+                    <img src="images/company-logo.png" alt="Company Logo" class="logo-img">
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#whoweare" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#campaigns" class="nav-link">Case Studies</a>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#latestresources" class="nav-link" id="resources-link">
+                            <div class="resources-content">Resources
+                            <i class="fa-solid fa-angle-down" id="dropdown-icon"></i></div>
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownlist">
+                            <li class="dropdown-item">
+                                <a href="#news" class="item">
+                                    <div class="item-icon">
+                                        <img src="images/book.svg" alt="Blog">
+                                    </div>
+                                    <div class="item-text">
+                                        <span class="item-title">Blog</span>
+                                        <span class="item-description">The latest industry news, updates and info.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="item">
+                                    <div class="item-icon">
+                                        <img src="images/zap.svg" alt="Customer Stories">
+                                    </div>
+                                    <div class="item-text">
+                                        <span class="item-title">Customer Stories</span>
+                                        <span class="item-description">Learn how our Customer are making big changes.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="item">
+                                    <div class="item-icon">
+                                        <img src="images/play-circle.svg" alt="Video Tutorails">
+                                    </div>
+                                    <div class="item-text">
+                                        <span class="item-title">Video Tutorials</span>
+                                        <span class="item-description">Get up and running on new features and techniques. bjhgvjhgvjhgvjhvjhg</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                 <form class="search-container" id="search-form">
+                    <input type="text" class="search-input" id="search-input-id" placeholder="Search...">
+                    <button type="submit" class="search-button">
+                    <i class="fas fa-search search-icon-inside"></i> </button>
+                </form>
+                <button id="searchbar-open-button" class="fa fa-search search-icon-outside"></button>
+                <button id="theme-switcher">
+                    <div class="theme-icon-holder">
+                        <i class="fa-regular fa-sun-bright"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                </button>
+            </nav>
+        </header>
+        <div class="hero-section">
+            <div class="section-content">
+                <div class="hero-content">
+                    <p class="hero-title">
+                        Beautiful analytics to grow smarter
+                    </p>
+                    <p class="hero-subtitle">
+                    Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups. 
+                    </p>
+                    <div class="hero-button">
+                        <button class="why-catalog">
+                           <a href="#" > Why Catalog? <i class="fa fa-arrow-right why-catalog-arrow"></i></a> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="campaigns-section" id="campaigns">
+            <div class="section-content">
+                <div class="campaigns-content">
+                    <h2 class="campaigns-title">Campaigns</h2>
+                    <p class="campaigns-subtitle">
+                        We aim to stop public funds siphoning off and we have a plan that will help. We are working at the national and EU levels to advance.
+                    </p>
+                    <ul class="campaigns-containers">
+                        <li class="campaigns-container">
+                            <div class="campaigns-img-container">
+                                <img src="images/campaigns-image-1.jpg" alt="Open Data Directives" class="campaigns-container-img">
+                            </div>
+                            <div class="campaigns-container-description">
+                                <h3 class="campaigns-container-title">Open Data Directives</h3>
+                                <p class="campaigns-container-subtitle">In view of Russia's military action against the Ukrainian people, being concerned about ensuring that European funds In view of Russia's military action against the Ukrainian people, </p>
+                                <a href="#" class="campaign-container-link">Learn more <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="campaigns-container">
+                            <div class="campaigns-img-container">
+                                <img src="images/campaigns-image-2.jpg" alt="Open Data Directives" class="campaigns-container-img">
+                            </div>
+                            <div class="campaigns-container-description">
+                                <h3 class="campaigns-container-title">Beneficial Ownership</h3>
+                                <p class="campaigns-container-subtitle">In view of Russia’s military action against the Ukrainian people, being concerned about ensuring that European funds In view of Russia’s military action against the Ukrainian people, </p>
+                                <a href="#" class="campaign-container-link">Learn more <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="campaigns-container">
+                            <div class="campaigns-img-container">
+                                <img src="images/campaigns-image-3.jpg" alt="Open Data Directives" class="campaigns-container-img">
+                            </div>
+                            <div class="campaigns-container-description">
+                                <h3 class="campaigns-container-title">EU Recovery Transparency</h3>
+                                <p class="campaigns-container-subtitle">In view of Russia's military action against the Ukrainian people, being concerned about ensuring that European funds In view of Russia's military action against the Ukrainian people, </p>
+                                <a href="#" class="campaign-container-link">Learn more <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="who-we-are-section" id="whoweare">
+            <div class="section-content">
+                <div class="who-we-are-content">
+                    <div class="who-we-are-descriptions">
+                        <h2 class="who-we-are-title">Who we are</h2>
+                        <p class="who-we-are-description">
+                            We are a collaboration of Non Govt.  and professionals working to ensure that government spending is done fairly, openly, efficiently, and creates the best value for money and best outcomes for Europe. We are working at the national and EU levels to advance the principles of openness in spending of funds, procurement, and company ownership within the EU.
+                        </p>
+                        <a href="#" class="who-are-we-link">Learn more <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="who-we-are-image-holder">
+                        <ul class="who-we-are-images">
+                            <div class="images-section-1">
+                                <li class="who-we-are-image-container">
+                                    <img src="images/person-1.jpg" alt="Adriana Homolova" class="who-we-are-image">
+                                    <p class="who-we-are-image-description">Adriana Homolova</p>
+                                </li>
+                                <li class="who-we-are-image-container">
+                                    <img src="images/person-3.jpg" alt="Karolis Granickas" class="who-we-are-image">
+                                    <p class="who-we-are-image-description">Karolis Granickas</p>
+                                </li>
+                            </div>
+                            <div class="images-section-2">
+                                <li class="who-we-are-image-container">
+                                    <img src="images/person-2.jpg" alt="Sandor Lederer" class="who-we-are-image">
+                                    <p class="who-we-are-image-description">Sandor Lederer</p>
+                                </li>
+                                <li class="who-we-are-image-container">
+                                    <img src="images/person-4.jpg" alt="Zara Montgomery" class="who-we-are-image">
+                                    <p class="who-we-are-image-description">Zara Montgomery</p>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="associate-company-section" id="associatecompany">
+            <div class="section-content">
+                <!-- Slider main container -->
+                <div class="swiper">
+                <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper associate-company-images">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="images/Company logo-1.svg" alt="Company Logo" class="associate-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/Company logo-2.svg" alt="Company Logo" class="associate-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/Company logo-3.svg" alt="Company Logo" class="associate-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/Company logo-4.svg" alt="Company Logo" class="associate-image">
+                        </div>
+                    </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-buttons">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-section" id="news">
+            <div class="section-content">
+                <div class="news-section-title"><h3>News</h3></div>
+                <div class="news-section-subtitle">
+                    <p>We aim to stop public funds siphoning off and we have a plan that will help. We are working at the national and EU level to advance.</p>
+                </div>
+               <ul class="news-section-containers">
+                <!-- <li class="news-section-container">
+                    <div class="news-section-image-holder">
+                        <img src="images/news-image-1.jpg" alt="News Image" class="news-section-image">
+                    </div>
+                    <div class="new-section-text">
+                        <div class="news-section-container-title">
+                            <p>Statement from the Catalogue Coalition...</p>
+                        </div>
+                        <div class="news-section-container-subtitle">
+                            <p>In view of Russias military action against the Ukarians people, being concerned about ensureing the European funds...</p>
+                        </div>
+                        <a href="#" class="news-section-learn-more">
+                            Learn more <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="news-section-container">
+                    <div class="news-section-image-holder">
+                        <img src="images/news-image-2.jpg" alt="News Image" class="news-section-image">
+                    </div>
+                    <div class="new-section-text">
+                        <div class="news-section-container-title">
+                            <p>Statement from the Catalogue Coalition...</p>
+                        </div>
+                        <div class="news-section-container-subtitle">
+                            <p>In view of Russias military action against the Ukarians people, being concerned about ensureing the European funds...</p>
+                        </div>
+                        <a href="#" class="news-section-learn-more">
+                            Learn more <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="news-section-container">
+                    <div class="news-section-image-holder">
+                        <img src="images/news-image-3.jpg" alt="News Image" class="news-section-image">
+                    </div>
+                    <div class="new-section-text">
+                        <div class="news-section-container-title">
+                            <p>Statement from the Catalogue Coalition...</p>
+                        </div>
+                        <div class="news-section-container-subtitle">
+                            <p>In view of Russias military action against the Ukarians people, being concerned about ensureing the European funds...</p>
+                        </div>
+                        <a href="#" class="news-section-learn-more">
+                            Learn more <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="news-section-container">
+                    <div class="news-section-image-holder">
+                        <img src="images/news-image-4.jpg" alt="News Image" class="news-section-image">
+                    </div>
+                    <div class="new-section-text">
+                        <div class="news-section-container-title">
+                            <p>Statement from the Catalogue Coalition...</p>
+                        </div>
+                        <div class="news-section-container-subtitle">
+                            <p>In view of Russias military action against the Ukarians people, being concerned about ensureing the European funds...</p>
+                        </div>
+                        <a href="#" class="news-section-learn-more">
+                            Learn more <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="news-section-container">
+                    <div class="news-section-image-holder">
+                        <img src="images/news-image-5.jpg" alt="News Image" class="news-section-image">
+                    </div>
+                    <div class="new-section-text">
+                        <div class="news-section-container-title">
+                            <p>Statement from the Catalogue Coalition...</p>
+                        </div>
+                        <div class="news-section-container-subtitle">
+                            <p>In view of Russias military action against the Ukarians people, being concerned about ensureing the European funds...</p>
+                        </div>
+                        <a href="#" class="news-section-learn-more">
+                            Learn more <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="news-section-container">
+                    <div class="news-section-image-holder">
+                        <img src="images/news-image-6.jpg" alt="News Image" class="news-section-image">
+                    </div>
+                    <div class="new-section-text">
+                        <div class="news-section-container-title">
+                            <p>Statement from the Catalogue Coalition...</p>
+                        </div>
+                        <div class="news-section-container-subtitle">
+                            <p>In view of Russias military action against the Ukarians people, being concerned about ensureing the European funds...</p>
+                        </div>
+                        <a href="#" class="news-section-learn-more">
+                            Learn more <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </li> -->
+               </ul>
+               <button class="view-all-news">
+                    View all news
+               </button>
+            </div>
+        </div>
+        <div class="latest-resources-section" id="latestresources">
+            <div class="section-content">
+                <div class="latest-resources-title">Latest Resources</div>
+                <div class="latest-resources-subtitle">
+                    <p>The latest resources includes Transparency toolkit, Evidence, Best Practices.</p>
+                </div>
+                <div class="latest-resources-containers">
+                    <div class="latest-resources-container">
+                        <div class="resources-img-holder">
+                            <div class="resources-icon-holder purple">
+                                <img src="images/Outline.svg" alt="Tools" class="resources-icon-img">
+                            </div>
+                            <p class="resources-icon-description">Tool</p>
+                        </div>
+                        <div class="resources-container-description">
+                            <div class="container-title">Defence Elvis</div>
+                            <div class="container-subtitle">It allows creating networks of public spending on goods services used in defense in 28 EU countires...</div>
+                            <a href="#" class="container-link">Learn more <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="latest-resources-container">
+                        <div class="resources-img-holder">
+                            <div class="resources-icon-holder blue">
+                                <img src="images/document.svg" alt="Evidence" class="resources-icon-img">
+                            </div>
+                            <p class="resources-icon-description">Open Procurement</p>
+                        </div>
+                        <div class="resources-container-description">
+                            <div class="container-title">Defence Elvis</div>
+                            <div class="container-subtitle">It allows creating networks of public spending on goods services used in defense in 28 EU countires...</div>
+                            <a href="#" class="container-link">Learn more <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="latest-resources-container">
+                        <div class="resources-img-holder">
+                            <div class="resources-icon-holder orange">
+                                <img src="images/check.svg" alt="Best Practices" class="resources-icon-img">
+                            </div>
+                            <p class="resources-icon-description">Best Practices</p>
+                        </div>
+                        <div class="resources-container-description">
+                            <div class="container-title">Transparent Spending</div>
+                            <div class="container-subtitle">It allows creating networks of public spending on goods services used in defense in 28 EU countires...</div>
+                            <a href="#" class="container-link">Learn more <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="view-all-resources">View all resources</button>
+            </div>
+        </div>
+        <div class="contact-us-section" id="contactus">
+            <div class="section-content">
+                <h2 class="contact-us-title">Contact Us</h2>
+                <p class="contact-us-subtitle">If you have any further inquiries, please let us know by filling out the form below.</p>
+                <form action="#" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name" class="form-title">First name</label>
+                            <input type="text" id="first-name" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name" class="form-title">Last name</label>
+                            <input type="text" id="last-name" class="form-input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-title">Email</label>
+                        <input type="email" id="email" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-title">Message</label>
+                        <textarea id="message" class="form-textarea" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-section">
+        <div class="section-content">
+            <div class="company-details">
+                <img src="images/company-logo.png" alt="Company Logo" class="company-logo">
+                <p class="company-description">
+                    We are a collaboration of non-government organisations and professionals working to ensure that governmental spending is utilized properly.
+                </p>
+                <div class="company-socials">
+                    <a href="#" class="social-link-holder">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link-holder">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link-holder">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="company-links">
+                <div class="links-column">
+                    <h4 class="links-title">Links</h4>
+                    <ul class="links-list">
+                        <li><a href="#campaigns">Campaigns</a></li>
+                        <li><a href="#latestresources">Resources</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#whoweare">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h4 class="links-title">Resources</h4>
+                    <ul class="links-list">
+                        <li><a href="#">Transparency Toolkit</a></li>
+                        <li><a href="#">Evidence</a></li>
+                        <li><a href="#">Best Practice</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h4 class="links-title">Contact Us</h4>
+                    <ul class="links-list">
+                        <li><a href="#contactus">Contact Us</a></li>
+                        <li><a href="#">Join Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="licensing-section">
+        <div class="licensing-content">
+            <a href="#" class="terms-link">Terms and Conditions</a>
+            <img src="images/cc-logo.png" alt="Creative Commons" class="cc-logo">
+        </div>
+        <div class="top-button">
+            <a href="#" id="scroll-to-top" class="button-icon">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
