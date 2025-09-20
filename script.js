@@ -162,9 +162,27 @@ document.addEventListener('DOMContentLoaded', async() => {
 
 
 const switchTheme = document.getElementById("theme-switcher");
-console.log(switchTheme);
-switchTheme.addEventListener("click", (event) => {
-    event.preventDefault();
-    var a=document.body.classList.toggle('darktheme');
-    console.log(a);
+let darkmode = localStorage.getItem('darktheme');
+
+const enableDarkmode = () => {
+    document.body.classList.add('darktheme');
+    localStorage.setItem('darktheme', 'active');
+}
+
+const disableDarkmode = () => {
+    document.body.classList.remove('darktheme');
+    localStorage.removeItem('darktheme');
+}
+
+if (darkmode === 'active') {
+    enableDarkmode();
+}
+
+switchTheme.addEventListener("click", () => {
+    darkmode = localStorage.getItem('darktheme');
+    if (darkmode !== 'active') {
+        enableDarkmode();
+    } else {
+        disableDarkmode();
+    }
 });
