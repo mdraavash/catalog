@@ -1,0 +1,13 @@
+:root {
+    --font-size-hero-title: 50px;
+    --font-size-title: 22px;
+    --font-size-heading: 20px;
+    --font-size-hero-subtitle: 18px;
+    --font-size-subtitle: 16px;
+    --font-size-base: 16px;
+    --font-size-detail: 14px;
+}
+
+.navbar .nav-menu {
+    display: none;
+}

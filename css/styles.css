@@ -117,7 +117,7 @@ img{
 .same-backdrop {
     background-image: 
         linear-gradient(180deg, rgba(0, 41, 83, 0.85) 0%, rgba(0, 45, 91, 0.85) 100%),
-        url('images/herobackground.jpg');
+        url('../images/herobackground.jpg');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -148,7 +148,7 @@ header {
 
 header .navbar {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
     padding: 5px 40px;
@@ -258,9 +258,8 @@ body.show-dropdownlist #dropdown-icon {
 /* search bar */
 .navbar .search-icon-outside{
     font-size: 20px;
-    color: var(--primary-color);
+    color: #FFFFFF;
     align-items: center;
-    margin-left: 40rem;
 }
 
 .navbar .search-container{
@@ -280,7 +279,7 @@ body.show-searchbar .search-icon-outside {
 
 .navbar .search-container .search-icon-inside{
     font-size: 1rem;
-    color: var(--primary-color);
+    color: #FFFFFF;
     margin-left: 0.5rem;
 }
 
@@ -288,12 +287,23 @@ body.show-searchbar .search-icon-outside {
     width: 20rem;
     height: 2rem;
     padding: 8px 12px;
-    margin-left: 20rem;
     background: var(--secondary-color);
     border: transparent;
     border-radius: var(--border-radius-m);
     font-size: var(--font-size-base);
     resize: none;
+}
+
+.navbar .search-theme-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.navbar .show-menu-button .menu-icon {
+    font-size: var(--font-size-heading);
+    color: #ffffff;
 }
 
 /*hero section*/
@@ -401,6 +411,7 @@ body.show-searchbar .search-icon-outside {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     gap: 2rem;
     text-align: left;
 }
@@ -922,7 +933,7 @@ body.show-searchbar .search-icon-outside {
 .footer-section {
     background-image: 
         linear-gradient(180deg, rgba(0, 41, 83, 0.95) 0%, rgba(0, 45, 91, 0.95) 100%),
-        url('images/footer-image.jpg');
+        url('../images/footer-image.jpg');
     background-size: cover; 
     background-position: center;
     padding: 4rem 2rem; /* Give it some space */
@@ -941,6 +952,7 @@ body.show-searchbar .search-icon-outside {
 
 /* --- Column 1: Company Details --- */
 .company-details {
+    font-size: var(--font-size-detail);
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -953,6 +965,7 @@ body.show-searchbar .search-icon-outside {
 }
 
 .company-socials {
+    font-size: var(--font-size-detail);
     display: flex;
     gap: 1rem;
 }
@@ -977,6 +990,7 @@ body.show-searchbar .search-icon-outside {
 
 /* --- Column 2: Link Columns --- */
 .company-links {
+    font-size: var(--font-size-detail);
     display: flex;
     gap: 4rem; /* Space between each link column */
     flex: 2; /* Allow it to take more space */
@@ -1060,3 +1074,4 @@ body.show-searchbar .search-icon-outside {
     text-decoration: none;
     font-size: 16px;
 }
+

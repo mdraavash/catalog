@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css" media="(max-width : 768px)">
     <title>Catalog</title>
 </head>
 <body>
@@ -67,18 +68,23 @@
                         </ul>
                     </li>
                 </ul>
-                 <form class="search-container" id="search-form">
-                    <input type="text" class="search-input" id="search-input-id" placeholder="Search...">
-                    <button type="submit" class="search-button">
-                    <i class="fas fa-search search-icon-inside"></i> </button>
-                </form>
-                <button id="searchbar-open-button" class="fa fa-search search-icon-outside"></button>
-                <button id="theme-switcher">
-                    <div class="theme-icon-holder">
-                        <i class="fa-solid fa-sun"></i>
-                        <i class="fa-solid fa-moon"></i>
-                    </div>
-                </button>
+                <div class="search-theme-container">
+                    <form class="search-container" id="search-form">
+                        <input type="text" class="search-input" id="search-input-id" placeholder="Search...">
+                        <button type="submit" class="search-button">
+                        <i class="fas fa-search search-icon-inside"></i> </button>
+                    </form>
+                    <button id="searchbar-open-button" class="fa fa-search search-icon-outside"></button>
+                    <button id="theme-switcher">
+                        <div class="theme-icon-holder">
+                            <i class="fa-solid fa-sun"></i>
+                            <i class="fa-solid fa-moon"></i>
+                        </div>
+                    </button>
+                    <button class="show-menu-button">
+                        <i class="fa-solid fa-list menu-icon"></i>
+                    </button>
+                </div>
             </nav>
         </header>
         <div class="hero-section">
@@ -459,6 +465,6 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="script.js" defer></script>
+    <script src="scripts/script.js" defer></script>
 </body>
 </html>
