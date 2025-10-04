@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css" media="(max-width : 1100px)">
+        <link rel="stylesheet" href="css/responsive.css" media="(max-width : 1100px)">
     <title>Catalog</title>
 </head>
 <body>
@@ -68,13 +68,15 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <form class="search-container" id="search-form">
+                            <input type="text" class="search-input" id="search-input-id" placeholder="Search...">
+                            <button type="submit" class="search-button">
+                            <i class="fas fa-search search-icon-inside"></i> </button>
+                        </form>
+                    </li>
                 </ul>
                 <div class="search-theme-container">
-                    <form class="search-container" id="search-form">
-                        <input type="text" class="search-input" id="search-input-id" placeholder="Search...">
-                        <button type="submit" class="search-button">
-                        <i class="fas fa-search search-icon-inside"></i> </button>
-                    </form>
                     <button id="searchbar-open-button" class="fa fa-search search-icon-outside"></button>
                     <button id="theme-switcher">
                         <div class="theme-icon-holder">
@@ -83,7 +85,7 @@
                         </div>
                     </button>
                     <button id="show-menu-button">
-                        <span class="material-symbols-outlined">menu</span>
+                        <span class="material-symbols-outlined menu-icon">menu</span>
                     </button>
                 </div>
                 <button id="close-menu-button">

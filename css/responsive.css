@@ -1,101 +1,107 @@
-/* All styles below should be in your responsive.css file,
-   or inside an @media (max-width: 768px) block in your main CSS. */
-
-/* --- GENERAL MOBILE STYLES --- */
+/* --- GENERAL MOBILE STYLES (for screens 768px and smaller) --- */
 :root {
     /* Adjust font sizes for smaller screens */
     --font-size-hero-title: 36px;
     --font-size-title: 28px;
-    --font-size-heading: 22px;
     --font-size-hero-subtitle: 16px;
-    --font-size-subtitle: 16px;
 }
 
-/* --- NAVBAR STYLES --- */
-.navbar {
-    /* Ensure the navbar items are spaced out on mobile */
-    justify-content: space-between;
-}
+/* --- RESPONSIVE HEADER & NAVBAR --- */
 
-/* Hide desktop menu and search bar by default */
+/* 1. Hide desktop links and search bar, show hamburger icon */
 .navbar .nav-menu,
-.navbar .search-container,
-.navbar .search-icon-outside{
+.navbar .search-icon-outside {
     display: none;
 }
 
-/* Show the hamburger menu icon */
-/* This selector is more specific and should override the desktop rule */
-#show-menu-button {
+.navbar .menu-icon ,.navbar .menu-close-icon{
     display: block;
-    color: #fff;
 }
-/* --- ACTIVE MOBILE MENU STYLES --- */
-/* This is the main container for the slide-out menu */
-/* --- ACTIVE MOBILE MENU STYLES --- */
+
+#show-menu-button {
+    display: block; /* Show the hamburger button */
+}
+
+/* 2. Style the mobile menu's default state (hidden off-screen) */
 .navbar .nav-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
     position: fixed;
     top: 0;
     right: 0;
-    width: 80%;
-    max-width: 300px;
-    height: 100vh;
+    width: 60%;
+    max-width: 2000px;
+    height: 100%;
     background-color: var(--secondary-color);
-    padding-top: 5rem;
-    z-index: 100;
     box-shadow: -5px 0 15px rgba(0,0,0,0.2);
-    
-    /* Start the menu off-screen to the right */
-    transform: translateX(100%); 
-    /* Add a smooth transition for the slide effect */
-    transition: transform 0.3s ease-in-out; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
 }
 
-body.show-mobile-menu .nav-menu {
-    /* When active, slide it into view */
-    transform: translateX(0); 
+/* 3. Style the active state (when menu is open) */
+.navbar.mobile-menu-active .nav-menu {
+    transform: translateX(0);
 }
 
-/* Show the close icon and position it correctly */
-body.show-mobile-menu #close-menu-button {
+.navbar.mobile-menu-active .search-container  {
+    display: block;
+}
+
+.navbar.mobile-menu-active .search-container .search-input {
+    width: 8rem;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
+
+/* 4. Hide/Show the correct menu icons */
+#close-menu-button {
+    display: none; /* Hidden by default */
+}
+
+.navbar.mobile-menu-active #close-menu-button {
     display: block;
     position: fixed;
-    top: 25px;
-    right: 25px;
-    z-index: 101; /* Must be on top of the menu */
+    top: 5rem;
+    right: 2rem;
+    z-index: 100; /* Must be on top of the menu */
 }
 
-/* Hide the hamburger icon when the menu is open */
-body.show-mobile-menu #show-menu-button {
-    display: none;
+.navbar.mobile-menu-active #show-menu-button {
+    display: none; /* Hide hamburger when menu is open */
 }
 
-/* --- MOBILE DROPDOWN STYLES --- */
-/* Make the dropdown a simple expanding block on mobile */
-#dropdownlist {
-    position: static; /* Remove absolute positioning */
-    width: 100%;
-    box-shadow: none;
-    background: none;
-    padding-left: 2rem; /* Indent the links slightly */
+.navbar.mobile-menu-active .nav-link, .navbar.mobile-menu-active .menu-close-icon, .navbar.mobile-menu-active .nav-links{
+    color: var(--primary-text-color);
 }
 
-/* FIX: Intuitive arrow rotation for dropdown */
-#dropdown-icon {
-    transform: rotate(0deg); /* Start pointing down */
-}
-body.show-dropdownlist #dropdown-icon {
-    transform: rotate(180deg); /* Point up when open */
-}
-
-
-/* --- HERO SECTION ADJUSTMENTS --- */
+/* --- Other Section Adjustments --- */
 .hero-section .hero-content {
     margin-top: 5rem;
-    padding-left: 1rem; /* Reduce side padding on mobile */
+    padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.who-we-are-section .who-we-are-content {
+    flex-direction: column;
+}
+
+.who-we-are-section .who-we-are-content .images-section-2{
+    margin-top: 0;
+}
+
+.associate-company-section .associate-image {
+    margin-right: 70%;
+}
+
+.footer-section .section-content, .company-links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.licensing-section .cc-logo {
+    margin-left: 0;
 }

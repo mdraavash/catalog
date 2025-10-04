@@ -305,8 +305,8 @@ body.show-searchbar .search-icon-outside {
 
 .navbar .menu-icon ,.navbar .menu-close-icon{
     display: none;
+    color: white;
     font-size: var(--font-size-heading);
-    color: #ffffff;
 }
 
 /*hero section*/
