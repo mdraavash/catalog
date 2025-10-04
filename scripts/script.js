@@ -73,7 +73,7 @@ const viewNewsBtn = document.querySelector('.view-all-news');
 const newsContainer = document.querySelector('.news-section-containers');
 
 // 2. Replace 'YOUR_API_KEY' with the key you got from NewsAPI.org
-const apiKey = '364698e869ca4b5091652c426d9c1415';
+
 let pageNum = 1; // Keep track of which page of results we're on
 
 function truncateText(text, maxLength) {
